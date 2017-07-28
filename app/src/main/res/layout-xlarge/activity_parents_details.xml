@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Parent's Details"
+            android:textSize="20dp"
+            android:id="@+id/textViewcampus"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/holo_green_light" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Father&apos;s Details:"
+        android:id="@+id/tv_fatherdetails"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/textView_fathername"
+        android:layout_alignBottom="@+id/editText_fathername"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fathername"
+        android:layout_below="@+id/tv_fatherdetails"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView_fathername" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile No."
+        android:id="@+id/tv_fathermobile"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView_fathername"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fathermobile"
+        android:layout_alignBottom="@+id/tv_fathermobile"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tv_fathermobile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ocupation"
+        android:id="@+id/tv_fatheroccupation"
+        android:layout_below="@+id/tv_fathermobile"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fatheroccupation"
+        android:layout_alignBottom="@+id/tv_fatheroccupation"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tv_fatheroccupation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:id="@+id/tv_fatheremail"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/tv_fatheroccupation"
+        android:layout_toStartOf="@+id/editText_fathername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fatheremail"
+        android:layout_alignBottom="@+id/tv_fatheremail"
+        android:layout_alignEnd="@+id/editText_fatheroccupation"
+        android:layout_toEndOf="@+id/tv_fatheremail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annual Income"
+        android:id="@+id/textView_fatherannualIncome"
+        android:layout_below="@+id/tv_fatheremail"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fatherannualincome"
+        android:layout_above="@+id/tv_motherdetails"
+        android:layout_alignEnd="@+id/editText_fatheroccupation"
+        android:layout_toEndOf="@+id/textView_fatherannualIncome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mother&apos;s Details"
+        android:id="@+id/tv_motherdetails"
+        android:layout_below="@+id/textView_fatherannualIncome"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/tv_mothername"
+        android:layout_below="@+id/tv_motherdetails"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_mothername"
+        android:layout_alignBottom="@+id/tv_mothername"
+        android:layout_alignEnd="@+id/editText_fatherannualincome"
+        android:layout_toEndOf="@+id/tv_fatheroccupation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile No."
+        android:id="@+id/tv_mothermobile"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/tv_mothername"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_mothermobile"
+        android:layout_alignBottom="@+id/tv_mothermobile"
+        android:layout_alignStart="@+id/editText_fathermobile"
+        android:layout_alignEnd="@+id/editText_mothername" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupation"
+        android:id="@+id/tv_motheroccupation"
+        android:layout_below="@+id/tv_mothermobile"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_mothroccupation"
+        android:layout_alignBottom="@+id/tv_motheroccupation"
+        android:layout_alignEnd="@+id/editText_mothermobile"
+        android:layout_toEndOf="@+id/tv_fathermobile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:id="@+id/tv_motherEmail"
+        android:layout_alignBottom="@+id/editText_motheremail"
+        android:layout_toStartOf="@+id/editText_fatheremail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_motheremail"
+        android:layout_below="@+id/editText_mothroccupation"
+        android:layout_alignEnd="@+id/editText_mothroccupation"
+        android:layout_toEndOf="@+id/tv_motheroccupation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annual Income"
+        android:id="@+id/tv_mother_annualincome"
+        android:layout_alignBottom="@+id/editText_mother__annualincome"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_mother__annualincome"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText_fatherannualincome"
+        android:layout_alignEnd="@+id/editText_motheremail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textSize="20dp"
+        android:id="@+id/button"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/editText_mother__annualincome"
+        android:layout_marginTop="47dp"
+        android:layout_alignEnd="@+id/editText_mother__annualincome"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+</ScrollView>

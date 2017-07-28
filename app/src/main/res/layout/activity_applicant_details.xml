@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Applicant Details"
+        android:textSize="20dp"
+        android:id="@+id/tv_adress_details"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/tv_adress_details"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_name"
+        android:layout_marginTop="40dp"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tv_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail Adress"
+        android:id="@+id/tv_email"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_email"
+        android:layout_marginTop="40dp"
+        android:layout_alignBottom="@+id/tv_email"
+        android:layout_alignEnd="@+id/editText_name"
+        android:layout_toEndOf="@+id/tv_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile No."
+        android:id="@+id/tv_mobile"
+        android:layout_below="@+id/tv_email"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_mobile"
+        android:layout_alignBottom="@+id/tv_mobile"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tv_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_bloodgroup"
+        android:layout_below="@+id/tv_mobile"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/editText_bloodgrp"
+        android:layout_alignBottom="@+id/tv_bloodgroup"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tv_bloodgroup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOB"
+        android:id="@+id/tv_DOB"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tv_bloodgroup"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_DOB"
+        android:layout_marginTop="40dp"
+        android:layout_above="@+id/spinner_gender"
+        android:layout_alignStart="@+id/editText_bloodgrp"
+        android:layout_alignEnd="@+id/editText_bloodgrp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:id="@+id/tv_Gender"
+        android:layout_below="@+id/tv_DOB"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/spinner_gender"
+        android:layout_below="@+id/tv_DOB"
+        android:layout_alignStart="@+id/spinner_martialstatus"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Martial Status"
+        android:id="@+id/tv_Martialstatus"
+        android:layout_below="@+id/spinner_gender"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_martialstatus"
+        android:layout_below="@+id/spinner_gender"
+        android:layout_toEndOf="@+id/tv_Martialstatus"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/tv_Category"
+        android:layout_alignBaseline="@+id/spinner_category"
+        android:layout_alignBottom="@+id/spinner_category"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_category"
+        android:layout_below="@+id/spinner_martialstatus"
+        android:layout_toEndOf="@+id/tv_mobile"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you physically challenged?"
+        android:id="@+id/tv_physicallychallenged_choice"
+        android:layout_alignBottom="@+id/editText_physicalchallenge"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_physicalchallenge"
+        android:layout_below="@+id/spinner_category"
+        android:layout_alignEnd="@+id/spinner_category"
+        android:layout_toEndOf="@+id/tv_physicallychallenged_choice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relegion"
+        android:id="@+id/tv_relegion"
+        android:layout_gravity="bottom|left"
+        android:layout_alignBottom="@+id/editText_relegion"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_relegion"
+        android:layout_below="@+id/tv_physicallychallenged_choice"
+        android:layout_alignEnd="@+id/spinner_martialstatus"
+        android:layout_toEndOf="@+id/tv_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality"
+        android:id="@+id/tv_nationality"
+        android:layout_alignBottom="@+id/editText_nationality"
+        android:layout_toStartOf="@+id/spinner_category" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_nationality"
+        android:layout_below="@+id/editText_relegion"
+        android:layout_alignStart="@+id/editText_DOB"
+        android:layout_alignEnd="@+id/editText_email" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="NEXT"
+        android:textSize="20dp"
+        android:id="@+id/btn_goto_parents_details"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/editText_nationality"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoimageView"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome To MMU"
+        android:id="@+id/welcometextView"
+        android:fontFamily="@string/abc_font_family_headline_material"
+        android:textColor="#d81b1b"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:textAlignment="center"
+        android:layout_below="@+id/logoimageView"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:id="@+id/courseib"
+        android:src="@drawable/courseslogo"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/reviewadmission_tv"
+        android:layout_alignTop="@+id/feeib"
+        android:layout_above="@+id/coursetv"
+        android:layout_alignRight="@+id/coursetv"
+        android:layout_alignEnd="@+id/coursetv" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feeib"
+        android:src="@drawable/feelogo"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:paddingEnd="@dimen/abc_control_padding_material"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/feetv"
+        android:layout_toEndOf="@+id/admissiontv"
+        android:layout_alignStart="@+id/feetv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Courses Offered"
+        android:id="@+id/coursetv"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/feeib"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Payment Details"
+        android:id="@+id/feetv"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:layout_below="@+id/feeib"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admissionib"
+        android:src="@drawable/admissiononline"
+        android:foregroundGravity="bottom|center"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/admissiontv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/coursetv"
+        android:layout_alignEnd="@+id/coursetv"
+        android:layout_below="@+id/coursetv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enroll Yourself"
+        android:id="@+id/admissiontv"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:layout_alignBaseline="@+id/reviewadmission_tv"
+        android:layout_alignBottom="@+id/reviewadmission_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewadmission_ib"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:src="@drawable/usersearch"
+        android:layout_below="@+id/feetv"
+        android:layout_toEndOf="@+id/admissionib"
+        android:layout_above="@+id/admissiontv"
+        android:layout_alignLeft="@+id/feetv"
+        android:layout_alignStart="@+id/feetv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/abc_search_url_text_selected"
+        android:text="Review Admission"
+        android:id="@+id/reviewadmission_tv"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/reviewadmission_ib"
+        android:layout_alignEnd="@+id/reviewadmission_ib"
+        android:layout_marginBottom="37dp" />
+
+</RelativeLayout>
+</ScrollView>

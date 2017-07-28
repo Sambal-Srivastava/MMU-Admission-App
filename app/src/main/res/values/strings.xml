@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">MMU Admission</string>
+    <string name="title_activity_admissionactivity">admissionactivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_admission">AdmissionActivity</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string-array name="campus_select">
+        <item>Select one</item>
+        <item>MMU Mullana-Ambala</item>
+        <item>MMU Sadopur-Ambala</item>
+    </string-array>
+
+    <string-array name="course_select">
+        <item>Select one</item>
+        <item>B.TECH</item>
+        <item>B.TECH Lateral Entery</item>
+    </string-array>
+
+
+    <string-array name="gender_select">
+        <item>Select one</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="martialstatus_select">
+        <item>Select one</item>
+        <item>Married</item>
+        <item>Unmarried</item>
+    </string-array>
+
+
+    <string-array name="category_select">
+        <item>Select one</item>
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC/ST/Other</item>
+    </string-array>
+</resources>
